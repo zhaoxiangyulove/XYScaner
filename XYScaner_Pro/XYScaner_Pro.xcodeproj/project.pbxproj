@@ -1,0 +1,823 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		897B9FAF3853F0DC2258FD63 /* libPods-XYScaner_Pro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27387957AD9ECF3F18726416 /* libPods-XYScaner_Pro.a */; };
+		A248E1B221D20A8D0014B2BC /* ScanMainItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */; };
+		A24A8D8A21D32F3E0037EB12 /* XYAdmobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */; };
+		A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8F21D333900037EB12 /* XYBannerLoader.m */; };
+		A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */; };
+		A2B720FD21D21A2E00D9EEFB /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */; };
+		A2B720FF21D3231500D9EEFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */; };
+		A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB66FE21CDEB3300FECE3F /* AppDelegate.m */; };
+		A2EB670521CDEB3300FECE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB670321CDEB3300FECE3F /* Main.storyboard */; };
+		A2EB670721CDEB3500FECE3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2EB670621CDEB3500FECE3F /* Assets.xcassets */; };
+		A2EB670A21CDEB3500FECE3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2EB670821CDEB3500FECE3F /* LaunchScreen.storyboard */; };
+		A2EB670D21CDEB3500FECE3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB670C21CDEB3500FECE3F /* main.m */; };
+		A2EB671721CDEB3500FECE3F /* XYScaner_ProUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB671621CDEB3500FECE3F /* XYScaner_ProUITests.m */; };
+		A2EB672621CE3AA900FECE3F /* XYScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB672421CE3AA900FECE3F /* XYScanView.m */; };
+		A2EB693821D0BDC300FECE3F /* ScanMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693721D0BDC300FECE3F /* ScanMainViewController.m */; };
+		A2EB693B21D0BFFE00FECE3F /* CameraScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693A21D0BFFE00FECE3F /* CameraScanViewController.m */; };
+		A2EB693E21D1C97600FECE3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693D21D1C97600FECE3F /* Constants.m */; };
+		A2F2E0B021D6130000512E4D /* XYBasicAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0AF21D6130000512E4D /* XYBasicAd.m */; };
+		A2F2E0B421D6247900512E4D /* XYBasicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0B321D6247900512E4D /* XYBasicManager.m */; };
+		A2F2E0B821D6432D00512E4D /* XYBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0B721D6432D00512E4D /* XYBannerManager.m */; };
+		A2F2E0BB21D65A8900512E4D /* XYAds.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0BA21D65A8900512E4D /* XYAds.m */; };
+		ED0E7F8614758A336717CBE6 /* libPods-XYScaner_ProUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FCF6723EF5EEDD510BEFF08 /* libPods-XYScaner_ProUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2EB671321CDEB3500FECE3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2EB66F221CDEB3300FECE3F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2EB66F921CDEB3300FECE3F;
+			remoteInfo = XYScaner_Pro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20C060C105A580D9B58E39B8 /* Pods-XYScaner_ProUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_ProUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_ProUITests/Pods-XYScaner_ProUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		27387957AD9ECF3F18726416 /* libPods-XYScaner_Pro.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYScaner_Pro.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A8967049CA0AB836D1921F /* Pods-XYScaner_Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro.debug.xcconfig"; sourceTree = "<group>"; };
+		6EDF8FFCFEF4D4CFB65DFDF5 /* Pods-XYScaner_Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro.release.xcconfig"; sourceTree = "<group>"; };
+		8FCF6723EF5EEDD510BEFF08 /* libPods-XYScaner_ProUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYScaner_ProUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A248E1B021D20A8D0014B2BC /* ScanMainItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanMainItemTableViewCell.h; sourceTree = "<group>"; };
+		A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanMainItemTableViewCell.m; sourceTree = "<group>"; };
+		A24A8D8821D32F3E0037EB12 /* XYAdmobBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAdmobBannerAdapter.h; sourceTree = "<group>"; };
+		A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAdmobBannerAdapter.m; sourceTree = "<group>"; };
+		A24A8D8E21D333900037EB12 /* XYBannerLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBannerLoader.h; sourceTree = "<group>"; };
+		A24A8D8F21D333900037EB12 /* XYBannerLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBannerLoader.m; sourceTree = "<group>"; };
+		A24A8D9321D366B70037EB12 /* XYBasicAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicAdapter.h; sourceTree = "<group>"; };
+		A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicAdapter.m; sourceTree = "<group>"; };
+		A2B720FB21D21A2E00D9EEFB /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
+		A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
+		A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A2EB66FA21CDEB3300FECE3F /* XYScaner_Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYScaner_Pro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB66FD21CDEB3300FECE3F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A2EB66FE21CDEB3300FECE3F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A2EB670421CDEB3300FECE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A2EB670621CDEB3500FECE3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2EB670921CDEB3500FECE3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2EB670B21CDEB3500FECE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EB670C21CDEB3500FECE3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A2EB671221CDEB3500FECE3F /* XYScaner_ProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYScaner_ProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2EB671621CDEB3500FECE3F /* XYScaner_ProUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYScaner_ProUITests.m; sourceTree = "<group>"; };
+		A2EB671821CDEB3500FECE3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2EB672421CE3AA900FECE3F /* XYScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYScanView.m; sourceTree = "<group>"; };
+		A2EB672521CE3AA900FECE3F /* XYScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYScanView.h; sourceTree = "<group>"; };
+		A2EB693621D0BDC300FECE3F /* ScanMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanMainViewController.h; sourceTree = "<group>"; };
+		A2EB693721D0BDC300FECE3F /* ScanMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanMainViewController.m; sourceTree = "<group>"; };
+		A2EB693921D0BFFE00FECE3F /* CameraScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CameraScanViewController.h; sourceTree = "<group>"; };
+		A2EB693A21D0BFFE00FECE3F /* CameraScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraScanViewController.m; sourceTree = "<group>"; };
+		A2EB693C21D1C97600FECE3F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A2EB693D21D1C97600FECE3F /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A2F2E0AA21D6127900512E4D /* BasicDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDelegate.h; sourceTree = "<group>"; };
+		A2F2E0AE21D6130000512E4D /* XYBasicAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicAd.h; sourceTree = "<group>"; };
+		A2F2E0AF21D6130000512E4D /* XYBasicAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicAd.m; sourceTree = "<group>"; };
+		A2F2E0B221D6247900512E4D /* XYBasicManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicManager.h; sourceTree = "<group>"; };
+		A2F2E0B321D6247900512E4D /* XYBasicManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicManager.m; sourceTree = "<group>"; };
+		A2F2E0B621D6432D00512E4D /* XYBannerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBannerManager.h; sourceTree = "<group>"; };
+		A2F2E0B721D6432D00512E4D /* XYBannerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBannerManager.m; sourceTree = "<group>"; };
+		A2F2E0B921D65A8900512E4D /* XYAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAds.h; sourceTree = "<group>"; };
+		A2F2E0BA21D65A8900512E4D /* XYAds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAds.m; sourceTree = "<group>"; };
+		FA90404943969788684DF428 /* Pods-XYScaner_ProUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_ProUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_ProUITests/Pods-XYScaner_ProUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2EB66F721CDEB3300FECE3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897B9FAF3853F0DC2258FD63 /* libPods-XYScaner_Pro.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB670F21CDEB3500FECE3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0E7F8614758A336717CBE6 /* libPods-XYScaner_ProUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CC8D8393580586CA3445227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29A8967049CA0AB836D1921F /* Pods-XYScaner_Pro.debug.xcconfig */,
+				6EDF8FFCFEF4D4CFB65DFDF5 /* Pods-XYScaner_Pro.release.xcconfig */,
+				20C060C105A580D9B58E39B8 /* Pods-XYScaner_ProUITests.debug.xcconfig */,
+				FA90404943969788684DF428 /* Pods-XYScaner_ProUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A24A8D8521D32DB00037EB12 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0B521D6430000512E4D /* Manager */,
+				A24A8D9121D3663C0037EB12 /* Basic */,
+				A24A8D8C21D3332B0037EB12 /* Loader */,
+				A24A8D8B21D32FEE0037EB12 /* Ad */,
+				A24A8D8621D32DC70037EB12 /* Adapter */,
+				A2F2E0B921D65A8900512E4D /* XYAds.h */,
+				A2F2E0BA21D65A8900512E4D /* XYAds.m */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		A24A8D8621D32DC70037EB12 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D8721D32DD10037EB12 /* AdmobAdapter */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A24A8D8721D32DD10037EB12 /* AdmobAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D8821D32F3E0037EB12 /* XYAdmobBannerAdapter.h */,
+				A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */,
+			);
+			path = AdmobAdapter;
+			sourceTree = "<group>";
+		};
+		A24A8D8B21D32FEE0037EB12 /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				A24A947321D3A7520037EB12 /* AdmobAd */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		A24A8D8C21D3332B0037EB12 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D8D21D333720037EB12 /* Banner */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		A24A8D8D21D333720037EB12 /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D8E21D333900037EB12 /* XYBannerLoader.h */,
+				A24A8D8F21D333900037EB12 /* XYBannerLoader.m */,
+			);
+			path = Banner;
+			sourceTree = "<group>";
+		};
+		A24A8D9121D3663C0037EB12 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0B121D6246200512E4D /* Manager */,
+				A2F2E0AD21D612E700512E4D /* Ad */,
+				A24A8D9221D366490037EB12 /* Adapter */,
+				A2F2E0AA21D6127900512E4D /* BasicDelegate.h */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		A24A8D9221D366490037EB12 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D9321D366B70037EB12 /* XYBasicAdapter.h */,
+				A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		A24A947321D3A7520037EB12 /* AdmobAd */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdmobAd;
+			sourceTree = "<group>";
+		};
+		A2EB66F121CDEB3300FECE3F = {
+			isa = PBXGroup;
+			children = (
+				A2EB66FC21CDEB3300FECE3F /* XYScaner_Pro */,
+				A2EB671521CDEB3500FECE3F /* XYScaner_ProUITests */,
+				A2EB66FB21CDEB3300FECE3F /* Products */,
+				1CC8D8393580586CA3445227 /* Pods */,
+				D865A9118888C1F170683052 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A2EB66FB21CDEB3300FECE3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB66FA21CDEB3300FECE3F /* XYScaner_Pro.app */,
+				A2EB671221CDEB3500FECE3F /* XYScaner_ProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2EB66FC21CDEB3300FECE3F /* XYScaner_Pro */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB66FD21CDEB3300FECE3F /* AppDelegate.h */,
+				A2EB66FE21CDEB3300FECE3F /* AppDelegate.m */,
+				A2EB670321CDEB3300FECE3F /* Main.storyboard */,
+				A2EB670621CDEB3500FECE3F /* Assets.xcassets */,
+				A2EB670821CDEB3500FECE3F /* LaunchScreen.storyboard */,
+				A2EB670B21CDEB3500FECE3F /* Info.plist */,
+				A2EB670C21CDEB3500FECE3F /* main.m */,
+				A2EB672221CE06CB00FECE3F /* Resource */,
+				A2EB672121CE06AD00FECE3F /* Classes */,
+			);
+			path = XYScaner_Pro;
+			sourceTree = "<group>";
+		};
+		A2EB671521CDEB3500FECE3F /* XYScaner_ProUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB671621CDEB3500FECE3F /* XYScaner_ProUITests.m */,
+				A2EB671821CDEB3500FECE3F /* Info.plist */,
+			);
+			path = XYScaner_ProUITests;
+			sourceTree = "<group>";
+		};
+		A2EB672121CE06AD00FECE3F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A24A8D8521D32DB00037EB12 /* Ad */,
+				A2EB693421D0BCC500FECE3F /* ViewController */,
+				A2EB672321CE3A1F00FECE3F /* View */,
+				A2EB693C21D1C97600FECE3F /* Constants.h */,
+				A2EB693D21D1C97600FECE3F /* Constants.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A2EB672221CE06CB00FECE3F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A2EB672321CE3A1F00FECE3F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB672521CE3AA900FECE3F /* XYScanView.h */,
+				A2EB672421CE3AA900FECE3F /* XYScanView.m */,
+				A248E1B021D20A8D0014B2BC /* ScanMainItemTableViewCell.h */,
+				A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2EB693421D0BCC500FECE3F /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB693521D0BD9F00FECE3F /* Scan */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A2EB693521D0BD9F00FECE3F /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				A2EB693621D0BDC300FECE3F /* ScanMainViewController.h */,
+				A2EB693721D0BDC300FECE3F /* ScanMainViewController.m */,
+				A2EB693921D0BFFE00FECE3F /* CameraScanViewController.h */,
+				A2EB693A21D0BFFE00FECE3F /* CameraScanViewController.m */,
+				A2B720FB21D21A2E00D9EEFB /* ScanResultViewController.h */,
+				A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */,
+			);
+			path = Scan;
+			sourceTree = "<group>";
+		};
+		A2F2E0AD21D612E700512E4D /* Ad */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0AE21D6130000512E4D /* XYBasicAd.h */,
+				A2F2E0AF21D6130000512E4D /* XYBasicAd.m */,
+			);
+			path = Ad;
+			sourceTree = "<group>";
+		};
+		A2F2E0B121D6246200512E4D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0B221D6247900512E4D /* XYBasicManager.h */,
+				A2F2E0B321D6247900512E4D /* XYBasicManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A2F2E0B521D6430000512E4D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A2F2E0B621D6432D00512E4D /* XYBannerManager.h */,
+				A2F2E0B721D6432D00512E4D /* XYBannerManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D865A9118888C1F170683052 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27387957AD9ECF3F18726416 /* libPods-XYScaner_Pro.a */,
+				8FCF6723EF5EEDD510BEFF08 /* libPods-XYScaner_ProUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2EB66F921CDEB3300FECE3F /* XYScaner_Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EB671B21CDEB3500FECE3F /* Build configuration list for PBXNativeTarget "XYScaner_Pro" */;
+			buildPhases = (
+				002652526E9794E32FEEB36E /* [CP] Check Pods Manifest.lock */,
+				A2EB66F621CDEB3300FECE3F /* Sources */,
+				A2EB66F721CDEB3300FECE3F /* Frameworks */,
+				A2EB66F821CDEB3300FECE3F /* Resources */,
+				BA6C6F91A1DAA92E18646302 /* [CP] Embed Pods Frameworks */,
+				45CD7A828476E980D282963D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYScaner_Pro;
+			productName = XYScaner_Pro;
+			productReference = A2EB66FA21CDEB3300FECE3F /* XYScaner_Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2EB671121CDEB3500FECE3F /* XYScaner_ProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2EB671E21CDEB3500FECE3F /* Build configuration list for PBXNativeTarget "XYScaner_ProUITests" */;
+			buildPhases = (
+				949F1E7AEFF152ED7FE51A04 /* [CP] Check Pods Manifest.lock */,
+				A2EB670E21CDEB3500FECE3F /* Sources */,
+				A2EB670F21CDEB3500FECE3F /* Frameworks */,
+				A2EB671021CDEB3500FECE3F /* Resources */,
+				A0DCC421D1C49D1266DFFF40 /* [CP] Embed Pods Frameworks */,
+				BB25D00D5B569C4EC276B286 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2EB671421CDEB3500FECE3F /* PBXTargetDependency */,
+			);
+			name = XYScaner_ProUITests;
+			productName = XYScaner_ProUITests;
+			productReference = A2EB671221CDEB3500FECE3F /* XYScaner_ProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2EB66F221CDEB3300FECE3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XY;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = xiangyu.zhao;
+				TargetAttributes = {
+					A2EB66F921CDEB3300FECE3F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					A2EB671121CDEB3500FECE3F = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = A2EB66F921CDEB3300FECE3F;
+					};
+				};
+			};
+			buildConfigurationList = A2EB66F521CDEB3300FECE3F /* Build configuration list for PBXProject "XYScaner_Pro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2EB66F121CDEB3300FECE3F;
+			productRefGroup = A2EB66FB21CDEB3300FECE3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2EB66F921CDEB3300FECE3F /* XYScaner_Pro */,
+				A2EB671121CDEB3500FECE3F /* XYScaner_ProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2EB66F821CDEB3300FECE3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B720FF21D3231500D9EEFB /* GoogleService-Info.plist in Resources */,
+				A2EB670A21CDEB3500FECE3F /* LaunchScreen.storyboard in Resources */,
+				A2EB670721CDEB3500FECE3F /* Assets.xcassets in Resources */,
+				A2EB670521CDEB3300FECE3F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB671021CDEB3500FECE3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		002652526E9794E32FEEB36E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYScaner_Pro-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45CD7A828476E980D282963D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		949F1E7AEFF152ED7FE51A04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYScaner_ProUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0DCC421D1C49D1266DFFF40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYScaner_ProUITests/Pods-XYScaner_ProUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6C6F91A1DAA92E18646302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB25D00D5B569C4EC276B286 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XYScaner_ProUITests/Pods-XYScaner_ProUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2EB66F621CDEB3300FECE3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2B720FD21D21A2E00D9EEFB /* ScanResultViewController.m in Sources */,
+				A248E1B221D20A8D0014B2BC /* ScanMainItemTableViewCell.m in Sources */,
+				A2EB693821D0BDC300FECE3F /* ScanMainViewController.m in Sources */,
+				A2EB672621CE3AA900FECE3F /* XYScanView.m in Sources */,
+				A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */,
+				A2EB670D21CDEB3500FECE3F /* main.m in Sources */,
+				A2F2E0B421D6247900512E4D /* XYBasicManager.m in Sources */,
+				A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */,
+				A2F2E0B821D6432D00512E4D /* XYBannerManager.m in Sources */,
+				A2F2E0BB21D65A8900512E4D /* XYAds.m in Sources */,
+				A2F2E0B021D6130000512E4D /* XYBasicAd.m in Sources */,
+				A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */,
+				A2EB693B21D0BFFE00FECE3F /* CameraScanViewController.m in Sources */,
+				A2EB693E21D1C97600FECE3F /* Constants.m in Sources */,
+				A24A8D8A21D32F3E0037EB12 /* XYAdmobBannerAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2EB670E21CDEB3500FECE3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EB671721CDEB3500FECE3F /* XYScaner_ProUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2EB671421CDEB3500FECE3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2EB66F921CDEB3300FECE3F /* XYScaner_Pro */;
+			targetProxy = A2EB671321CDEB3500FECE3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2EB670321CDEB3300FECE3F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB670421CDEB3300FECE3F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A2EB670821CDEB3500FECE3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2EB670921CDEB3500FECE3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2EB671921CDEB3500FECE3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A2EB671A21CDEB3500FECE3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2EB671C21CDEB3500FECE3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A8967049CA0AB836D1921F /* Pods-XYScaner_Pro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = XYScaner_Pro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.zxy.XYScaner-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A2EB671D21CDEB3500FECE3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDF8FFCFEF4D4CFB65DFDF5 /* Pods-XYScaner_Pro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = XYScaner_Pro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.zxy.XYScaner-Pro";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A2EB671F21CDEB3500FECE3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20C060C105A580D9B58E39B8 /* Pods-XYScaner_ProUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = XYScaner_ProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.zxy.XYScaner-ProUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XYScaner_Pro;
+			};
+			name = Debug;
+		};
+		A2EB672021CDEB3500FECE3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA90404943969788684DF428 /* Pods-XYScaner_ProUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P23UWXMRAB;
+				INFOPLIST_FILE = XYScaner_ProUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "personal.zxy.XYScaner-ProUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XYScaner_Pro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2EB66F521CDEB3300FECE3F /* Build configuration list for PBXProject "XYScaner_Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB671921CDEB3500FECE3F /* Debug */,
+				A2EB671A21CDEB3500FECE3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB671B21CDEB3500FECE3F /* Build configuration list for PBXNativeTarget "XYScaner_Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB671C21CDEB3500FECE3F /* Debug */,
+				A2EB671D21CDEB3500FECE3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2EB671E21CDEB3500FECE3F /* Build configuration list for PBXNativeTarget "XYScaner_ProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2EB671F21CDEB3500FECE3F /* Debug */,
+				A2EB672021CDEB3500FECE3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2EB66F221CDEB3300FECE3F /* Project object */;
+}
