@@ -1,0 +1,1 @@
+../../../../GoogleMobileAdsMediationInMobi/InMobiAdapter-7.2.0.0/InMobiAdapter.framework/Versions/A/Headers/InMobiAdapter.h

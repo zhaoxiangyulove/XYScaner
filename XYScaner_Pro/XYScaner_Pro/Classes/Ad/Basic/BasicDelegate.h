@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class XYBasicAd;
+@class XYBasicLoader;
 
 @protocol LoadBasicDelegate <NSObject>
 
 - (UIViewController *)rootViewController;
-- (void)loadedAnAd:(XYBasicAd *)ad;
+- (void)loadedAnAd:(XYBasicLoader *)loader;
 
 @end

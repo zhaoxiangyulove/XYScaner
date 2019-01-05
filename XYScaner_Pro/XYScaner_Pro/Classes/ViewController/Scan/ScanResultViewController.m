@@ -9,14 +9,19 @@
 #import "ScanResultViewController.h"
 #import <WebKit/WebKit.h>
 #import "Constants.h"
-#import "XYBannerLoader.h"
+#import "XYBannerManager.h"
+#import "XYQRCodeResultView.h"
+#import "XYAdmobRewardedVideoAdapter.h"
 
-@interface ScanResultViewController ()<WKUIDelegate, WKNavigationDelegate,LoadBasicDelegate>{
+@import GoogleMobileAds;
+
+@interface ScanResultViewController ()<WKUIDelegate, WKNavigationDelegate, LoadBasicDelegate, XYQRCodeResultViewDelegate>{
     NSString *_barcodeStr;
     XYCodeScannerType _barcodeType;
 }
 
 @property (nonatomic, strong) WKWebView *webView;
+@property (nonatomic, strong) XYAdmobRewardedVideoAdapter *adapter;
 
 @end
 
@@ -43,24 +48,73 @@
     UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithCustomView:back];
     self.navigationItem.leftBarButtonItem = backButtonItem;
 }
+- (void)setRightItemWithQRType:(QRType)qrType{
+    UIButton *rightItem = [UIButton buttonWithType:UIButtonTypeSystem];
+    switch (qrType) {
+        case urlType:
+            [rightItem setTitle:@"Open" forState:UIControlStateNormal];
+            [rightItem addTarget:self action:@selector(openInSafari) forControlEvents:UIControlEventTouchUpInside];
+            break;
+        case cardType:
+            [rightItem setTitle:@"Add" forState:UIControlStateNormal];
+            break;
+        case emailType:
+        case emailAddressType:
+            [rightItem setTitle:@"Send" forState:UIControlStateNormal];
+            break;
+        case smsType:
+            [rightItem setTitle:@"XXXX" forState:UIControlStateNormal];
+            break;
+        case eventType:
+            [rightItem setTitle:@"XXXX" forState:UIControlStateNormal];
+            break;
+        case telType:
+            [rightItem setTitle:@"Call" forState:UIControlStateNormal];
+            break;
+        case mapType:
+            [rightItem setTitle:@"XXXX" forState:UIControlStateNormal];
+            break;
+        default:
+            break;
+    }
+    
+    rightItem.frame = CGRectMake(0, 0, 50, 32);
+    UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightItem];
+    self.navigationItem.rightBarButtonItem = rightButtonItem;
+}
 
 - (void)goBackViewController{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark QRcode RightItem methods
+
+- (void)openInSafari{
+    if ([[GADRewardBasedVideoAd sharedInstance] isReady]) {
+        [[GADRewardBasedVideoAd sharedInstance] presentFromRootViewController:self];
+    }
+}
+
+#pragma mark ViewController methods
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.navigationItem.title = @"loading...";
+    
     [self setBackItem];
     // Do any additional setup after loading the view.
     if (_barcodeType == XYCodeScannerTypeBarcode) {
+        self.navigationItem.title = @"loading...";
         [self showResultWithWebView];
     }else if(_barcodeType == XYCodeScannerTypeQRCode){
-        
+        self.navigationItem.title = @"QRCode Result";
+        [self showQRCodeResult];
     }
 //    [self loadAd];
+    _adapter = [[XYAdmobRewardedVideoAdapter alloc] init];
+    [_adapter loadAd];
     [self showAd];
+    
 }
 
 - (void)showResultWithWebView{
@@ -70,22 +124,31 @@
     [self.view addSubview:_webView];
 }
 
+- (void)showQRCodeResult{
+    XYQRCodeResultView *resultView = [XYQRCodeResultView resultViewWithQRCodeString:_barcodeStr];
+    resultView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 50);
+    [self setRightItemWithQRType:resultView.qrType];
+//    resultView.delegate = self;
+    [self.view addSubview:resultView];
+}
+
 - (void)loadAd{
-    [XYBannerLoader setDelegate:self];
-//    [XYBannerLoader loadWithCount:1];
-    
 }
 
 - (void)showAd{
-    BOOL AdShown = [XYBannerLoader showBannerInView:self.view];
+    BOOL AdShown = [[XYBannerManager shareInstance] showInView:self.view];
     if (AdShown == NO) {
         //处理一次展示机会失败
-        NSLog(@"sad");
+        [self loadAd];
     }
 }
+
+#pragma mark LoadBasicDelegate methods
+
 - (UIViewController *)rootViewController{
     return self;
 }
+
 
 /*
 #pragma mark - Navigation

@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		897B9FAF3853F0DC2258FD63 /* libPods-XYScaner_Pro.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27387957AD9ECF3F18726416 /* libPods-XYScaner_Pro.a */; };
-		A248E1B221D20A8D0014B2BC /* ScanMainItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */; };
+		A214676521DCA56B00138A7F /* XYBasicLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A214676421DCA56B00138A7F /* XYBasicLoader.m */; };
+		A214676C21DCDA6B00138A7F /* XYQRCodeResultView.m in Sources */ = {isa = PBXBuildFile; fileRef = A214676B21DCDA6B00138A7F /* XYQRCodeResultView.m */; };
 		A24A8D8A21D32F3E0037EB12 /* XYAdmobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */; };
 		A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8F21D333900037EB12 /* XYBannerLoader.m */; };
 		A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */; };
@@ -24,6 +25,10 @@
 		A2EB693821D0BDC300FECE3F /* ScanMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693721D0BDC300FECE3F /* ScanMainViewController.m */; };
 		A2EB693B21D0BFFE00FECE3F /* CameraScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693A21D0BFFE00FECE3F /* CameraScanViewController.m */; };
 		A2EB693E21D1C97600FECE3F /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB693D21D1C97600FECE3F /* Constants.m */; };
+		A2ED756721DE278400290F99 /* XYAdmobRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2ED756621DE278400290F99 /* XYAdmobRewardedVideoAdapter.m */; };
+		A2ED756921DF54F400290F99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ED756821DF54F400290F99 /* libsqlite3.0.tbd */; };
+		A2ED756B21DF550800290F99 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ED756A21DF550800290F99 /* libz.tbd */; };
+		A2ED756D21DF551600290F99 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2ED756C21DF551600290F99 /* WebKit.framework */; };
 		A2F2E0B021D6130000512E4D /* XYBasicAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0AF21D6130000512E4D /* XYBasicAd.m */; };
 		A2F2E0B421D6247900512E4D /* XYBasicManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0B321D6247900512E4D /* XYBasicManager.m */; };
 		A2F2E0B821D6432D00512E4D /* XYBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F2E0B721D6432D00512E4D /* XYBannerManager.m */; };
@@ -47,8 +52,10 @@
 		29A8967049CA0AB836D1921F /* Pods-XYScaner_Pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_Pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro.debug.xcconfig"; sourceTree = "<group>"; };
 		6EDF8FFCFEF4D4CFB65DFDF5 /* Pods-XYScaner_Pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYScaner_Pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-XYScaner_Pro/Pods-XYScaner_Pro.release.xcconfig"; sourceTree = "<group>"; };
 		8FCF6723EF5EEDD510BEFF08 /* libPods-XYScaner_ProUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XYScaner_ProUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A248E1B021D20A8D0014B2BC /* ScanMainItemTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanMainItemTableViewCell.h; sourceTree = "<group>"; };
-		A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanMainItemTableViewCell.m; sourceTree = "<group>"; };
+		A214676321DCA56B00138A7F /* XYBasicLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicLoader.h; sourceTree = "<group>"; };
+		A214676421DCA56B00138A7F /* XYBasicLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicLoader.m; sourceTree = "<group>"; };
+		A214676A21DCDA6B00138A7F /* XYQRCodeResultView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYQRCodeResultView.h; sourceTree = "<group>"; };
+		A214676B21DCDA6B00138A7F /* XYQRCodeResultView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYQRCodeResultView.m; sourceTree = "<group>"; };
 		A24A8D8821D32F3E0037EB12 /* XYAdmobBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAdmobBannerAdapter.h; sourceTree = "<group>"; };
 		A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAdmobBannerAdapter.m; sourceTree = "<group>"; };
 		A24A8D8E21D333900037EB12 /* XYBannerLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBannerLoader.h; sourceTree = "<group>"; };
@@ -77,6 +84,11 @@
 		A2EB693A21D0BFFE00FECE3F /* CameraScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraScanViewController.m; sourceTree = "<group>"; };
 		A2EB693C21D1C97600FECE3F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		A2EB693D21D1C97600FECE3F /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		A2ED756521DE278400290F99 /* XYAdmobRewardedVideoAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYAdmobRewardedVideoAdapter.h; sourceTree = "<group>"; };
+		A2ED756621DE278400290F99 /* XYAdmobRewardedVideoAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYAdmobRewardedVideoAdapter.m; sourceTree = "<group>"; };
+		A2ED756821DF54F400290F99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A2ED756A21DF550800290F99 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A2ED756C21DF551600290F99 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		A2F2E0AA21D6127900512E4D /* BasicDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicDelegate.h; sourceTree = "<group>"; };
 		A2F2E0AE21D6130000512E4D /* XYBasicAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicAd.h; sourceTree = "<group>"; };
 		A2F2E0AF21D6130000512E4D /* XYBasicAd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicAd.m; sourceTree = "<group>"; };
@@ -94,6 +106,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2ED756D21DF551600290F99 /* WebKit.framework in Frameworks */,
+				A2ED756B21DF550800290F99 /* libz.tbd in Frameworks */,
+				A2ED756921DF54F400290F99 /* libsqlite3.0.tbd in Frameworks */,
 				897B9FAF3853F0DC2258FD63 /* libPods-XYScaner_Pro.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +133,22 @@
 				FA90404943969788684DF428 /* Pods-XYScaner_ProUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A214676221DCA51200138A7F /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				A214676321DCA56B00138A7F /* XYBasicLoader.h */,
+				A214676421DCA56B00138A7F /* XYBasicLoader.m */,
+			);
+			path = Loader;
+			sourceTree = "<group>";
+		};
+		A214676621DCD95F00138A7F /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		A24A8D8521D32DB00037EB12 /* Ad */ = {
@@ -147,6 +178,8 @@
 			children = (
 				A24A8D8821D32F3E0037EB12 /* XYAdmobBannerAdapter.h */,
 				A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */,
+				A2ED756521DE278400290F99 /* XYAdmobRewardedVideoAdapter.h */,
+				A2ED756621DE278400290F99 /* XYAdmobRewardedVideoAdapter.m */,
 			);
 			path = AdmobAdapter;
 			sourceTree = "<group>";
@@ -179,6 +212,7 @@
 		A24A8D9121D3663C0037EB12 /* Basic */ = {
 			isa = PBXGroup;
 			children = (
+				A214676221DCA51200138A7F /* Loader */,
 				A2F2E0B121D6246200512E4D /* Manager */,
 				A2F2E0AD21D612E700512E4D /* Ad */,
 				A24A8D9221D366490037EB12 /* Adapter */,
@@ -251,6 +285,7 @@
 		A2EB672121CE06AD00FECE3F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A214676621DCD95F00138A7F /* Tool */,
 				A24A8D8521D32DB00037EB12 /* Ad */,
 				A2EB693421D0BCC500FECE3F /* ViewController */,
 				A2EB672321CE3A1F00FECE3F /* View */,
@@ -273,8 +308,8 @@
 			children = (
 				A2EB672521CE3AA900FECE3F /* XYScanView.h */,
 				A2EB672421CE3AA900FECE3F /* XYScanView.m */,
-				A248E1B021D20A8D0014B2BC /* ScanMainItemTableViewCell.h */,
-				A248E1B121D20A8D0014B2BC /* ScanMainItemTableViewCell.m */,
+				A214676A21DCDA6B00138A7F /* XYQRCodeResultView.h */,
+				A214676B21DCDA6B00138A7F /* XYQRCodeResultView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +365,9 @@
 		D865A9118888C1F170683052 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A2ED756C21DF551600290F99 /* WebKit.framework */,
+				A2ED756A21DF550800290F99 /* libz.tbd */,
+				A2ED756821DF54F400290F99 /* libsqlite3.0.tbd */,
 				27387957AD9ECF3F18726416 /* libPods-XYScaner_Pro.a */,
 				8FCF6723EF5EEDD510BEFF08 /* libPods-XYScaner_ProUITests.a */,
 			);
@@ -544,14 +582,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2B720FD21D21A2E00D9EEFB /* ScanResultViewController.m in Sources */,
-				A248E1B221D20A8D0014B2BC /* ScanMainItemTableViewCell.m in Sources */,
 				A2EB693821D0BDC300FECE3F /* ScanMainViewController.m in Sources */,
 				A2EB672621CE3AA900FECE3F /* XYScanView.m in Sources */,
+				A214676521DCA56B00138A7F /* XYBasicLoader.m in Sources */,
 				A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */,
 				A2EB670D21CDEB3500FECE3F /* main.m in Sources */,
 				A2F2E0B421D6247900512E4D /* XYBasicManager.m in Sources */,
 				A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */,
+				A214676C21DCDA6B00138A7F /* XYQRCodeResultView.m in Sources */,
 				A2F2E0B821D6432D00512E4D /* XYBannerManager.m in Sources */,
+				A2ED756721DE278400290F99 /* XYAdmobRewardedVideoAdapter.m in Sources */,
 				A2F2E0BB21D65A8900512E4D /* XYAds.m in Sources */,
 				A2F2E0B021D6130000512E4D /* XYBasicAd.m in Sources */,
 				A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */,

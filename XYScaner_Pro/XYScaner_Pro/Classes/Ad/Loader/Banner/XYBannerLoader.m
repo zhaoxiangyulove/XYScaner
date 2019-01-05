@@ -56,9 +56,6 @@ static XYBannerLoader *_singleton = nil;
     return _adapterList;
 }
 
-+ (BOOL)showBannerInView:(UIView *)view{
-    BOOL canShown = [[XYBannerManager shareInstance] showInView:view];
-    return canShown;
-}
+
 
 @end

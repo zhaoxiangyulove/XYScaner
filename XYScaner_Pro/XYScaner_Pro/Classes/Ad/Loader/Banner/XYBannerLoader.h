@@ -6,18 +6,18 @@
 //  Copyright © 2018 xiangyu.zhao. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "XYBasicLoader.h"
 #import "XYBasicAdapter.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XYBannerLoader : NSObject
+@interface XYBannerLoader : XYBasicLoader
 
 + (void)setDelegate:(id <LoadBasicDelegate>)delegate;
 
 + (void)loadWithCount:(int)count;
 
-+ (BOOL)showBannerInView:(UIView *)view;
+
 
 @end
 

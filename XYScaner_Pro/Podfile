@@ -8,6 +8,7 @@ target 'XYScaner_Pro' do
   # Pods for XYScaner_Pro
   pod 'Firebase/Core'
   pod 'Google-Mobile-Ads-SDK'
+  pod 'GoogleMobileAdsMediationInMobi'
 
   target 'XYScaner_ProUITests' do
     inherit! :search_paths

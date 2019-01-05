@@ -30,11 +30,12 @@ static XYBannerManager *_singleton = nil;
 - (BOOL)insertAdtoPool:(XYBasicAd *)ad{
     if (ad) {
         //后期用 CPM 排序
-        [self.AdPool addObject:ad];
+        [self.AdPool insertObject:ad atIndex:0];
         return YES;
     }
     return NO;
 }
+
 
 - (BOOL)showInView:(UIView *)view{
     if (self.AdPool.firstObject) {

@@ -15,32 +15,38 @@
 @interface XYAdmobBannerAdapter()<GADBannerViewDelegate>
 
 @property(nonatomic, strong) GADBannerView *bannerView;
+//rootViewController
+@property (nonatomic, strong) UIViewController *rootViewController;
 
 @end
 
 @implementation XYAdmobBannerAdapter
 + (void)initialize{
     [super initialize];
-    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7983146809499701~9028445079"];
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-7983146809499701~6114532779"];
 }
+
 - (void)loadAd{
     self.bannerView = [[GADBannerView alloc]
                        initWithAdSize:kGADAdSizeSmartBannerPortrait];
     //test ID ca-app-pub-3940256099942544/2934735716
 
-    self.bannerView.adUnitID = @"ca-app-pub-7983146809499701/6441099749";
+    self.bannerView.adUnitID = @"ca-app-pub-7983146809499701/1658915463";
 #if DEBUG
-    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
+//    self.bannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";
 #endif
-    if (self.delegate) {
-        self.bannerView.rootViewController = [self.delegate rootViewController];
-    }else{
-        self.bannerView.rootViewController = [[UIViewController alloc] init];
-    }
+    self.bannerView.rootViewController = self.rootViewController;
     self.bannerView.delegate = self;
     [self.bannerView loadRequest:[GADRequest request]];
 }
--
+
+- (UIViewController *)rootViewController{
+    _rootViewController = [UIApplication sharedApplication].keyWindow.rootViewController;
+    if (_rootViewController == nil) {
+        _rootViewController = [[UIViewController alloc] init];
+    }
+    return _rootViewController;
+}
 
 #pragma mark GADBannerViewDelegate methods
 
