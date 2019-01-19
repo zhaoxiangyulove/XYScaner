@@ -1,1 +1,1 @@
-../../../../GoogleMobileAdsMediationInMobi/InMobiAdapter-7.2.0.0/InMobiAdapter.framework/Versions/A/Headers/GADMInMobiConsent.h
+../../../../GoogleMobileAdsMediationInMobi/InMobiAdapter-7.2.1.0/InMobiAdapter.framework/Versions/A/Headers/GADMInMobiConsent.h

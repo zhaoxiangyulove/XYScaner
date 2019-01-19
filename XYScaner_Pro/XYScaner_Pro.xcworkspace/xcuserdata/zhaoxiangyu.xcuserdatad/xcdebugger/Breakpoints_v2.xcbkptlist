@@ -41,22 +41,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "XYScaner_Pro/Classes/Ad/Adapter/AdmobAdapter/XYAdmobBannerAdapter.m"
-            timestampString = "568294148.256074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "-adViewDidReceiveAd:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "XYScaner_Pro/Classes/Ad/Adapter/AdmobAdapter/XYAdmobRewardedVideoAdapter.m"
             timestampString = "568293722.678264"
             startingColumnNumber = "9223372036854775807"
@@ -64,54 +48,6 @@
             startingLineNumber = "62"
             endingLineNumber = "62"
             landmarkName = "-rewardBasedVideoAd:didFailToLoadWithError:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XYScaner_Pro/Classes/Ad/Adapter/AdmobAdapter/XYAdmobRewardedVideoAdapter.m"
-            timestampString = "568293769.630204"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-rewardBasedVideoAdDidReceiveAd:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XYScaner_Pro/Classes/Ad/Manager/XYBannerManager.m"
-            timestampString = "568294148.256232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "-showInView:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "XYScaner_Pro/Classes/Ad/Adapter/AdmobAdapter/XYAdmobBannerAdapter.m"
-            timestampString = "568294148.256737"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "-loadAd"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

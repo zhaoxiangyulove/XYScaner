@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BE1C70F42FE6437A2C54A4EB1BFD02BD"
+               BlueprintIdentifier = "7A1EB5D8534E5B74760EBB5CE8DCA143"
                BlueprintName = "Pods-XYScaner_Pro"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-XYScaner_Pro.a">

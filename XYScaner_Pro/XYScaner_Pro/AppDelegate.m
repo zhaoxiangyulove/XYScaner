@@ -12,6 +12,8 @@
 
 @interface AppDelegate ()
 
+@property (nonatomic, strong) FIRTrace *trace;
+
 @end
 
 @implementation AppDelegate
@@ -20,7 +22,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [FIRApp configure];
+    _trace = [FIRPerformance startTraceWithName:@"test trace"];
     [XYAds initializeSDK];
+    [_trace stop];
+//    [trace start];
+//    [trace stop];
+    
     return YES;
 }
 

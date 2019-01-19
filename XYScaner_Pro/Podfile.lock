@@ -1,9 +1,16 @@
 PODS:
+  - FBAudienceNetwork (4.99.3)
   - Firebase/Core (5.15.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.4.0)
   - Firebase/CoreOnly (5.15.0):
     - FirebaseCore (= 5.1.10)
+  - Firebase/Performance (5.15.0):
+    - Firebase/Core
+    - FirebasePerformance (= 2.2.2)
+  - FirebaseABTesting (2.0.0):
+    - FirebaseCore (~> 5.0)
+    - Protobuf (~> 3.5)
   - FirebaseAnalytics (5.4.0):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.3)
@@ -19,6 +26,24 @@ PODS:
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
+  - FirebasePerformance (2.2.2):
+    - FirebaseAnalytics (~> 5.4)
+    - FirebaseInstanceID (~> 3.3)
+    - FirebaseRemoteConfig (~> 3.1)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - GoogleUtilities/ISASwizzler (~> 5.2)
+    - GoogleUtilities/MethodSwizzler (~> 5.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.5)
+  - FirebaseRemoteConfig (3.1.0):
+    - FirebaseABTesting (~> 2.0)
+    - FirebaseAnalytics (~> 5.3)
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - Protobuf (~> 3.5)
   - Google-Mobile-Ads-SDK (7.37.0)
   - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
@@ -26,14 +51,23 @@ PODS:
     - GoogleUtilities/Network (~> 5.2)
     - GoogleUtilities/NSData+zlib (~> 5.2)
     - nanopb (~> 0.3)
-  - GoogleMobileAdsMediationInMobi (7.2.0.0):
+  - GoogleMobileAdsMediationFacebook (4.99.3.0):
+    - FBAudienceNetwork (= 4.99.3)
+    - Google-Mobile-Ads-SDK (>= 7.12.0)
+  - GoogleMobileAdsMediationInMobi (7.2.1.0):
     - Google-Mobile-Ads-SDK (>= 7.14.0)
-    - InMobiSDK (= 7.2.0)
+    - InMobiSDK (= 7.2.1)
+  - GoogleToolboxForMac/Defines (2.2.0)
+  - GoogleToolboxForMac/Logger (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
+  - GoogleToolboxForMac/NSData+zlib (2.2.0):
+    - GoogleToolboxForMac/Defines (= 2.2.0)
   - GoogleUtilities/AppDelegateSwizzler (5.3.6):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
   - GoogleUtilities/Environment (5.3.6)
+  - GoogleUtilities/ISASwizzler (5.3.6)
   - GoogleUtilities/Logger (5.3.6):
     - GoogleUtilities/Environment
   - GoogleUtilities/MethodSwizzler (5.3.6):
@@ -47,30 +81,42 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.3.6):
     - GoogleUtilities/Logger
-  - InMobiSDK (7.2.0)
+  - GTMSessionFetcher/Core (1.2.1)
+  - InMobiSDK (7.2.1)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - Protobuf (3.6.1)
 
 DEPENDENCIES:
   - Firebase/Core
+  - Firebase/Performance
   - Google-Mobile-Ads-SDK
+  - GoogleMobileAdsMediationFacebook
   - GoogleMobileAdsMediationInMobi
 
 SPEC CHECKSUMS:
+  FBAudienceNetwork: 4db9db11614ea1a165c05233183b7fdf741db55e
   Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
+  FirebaseABTesting: 1f50b8d50f5e3469eea54e7463a7b7fe221d1f5e
   FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
   FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebasePerformance: 6f77b930f982a54ad487d3de5523ce641db9dcc9
+  FirebaseRemoteConfig: 7e11c65f0769c09bff6947997c209515058c5318
   Google-Mobile-Ads-SDK: d028682d7450749a1955679da050eaf70d997b3e
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
-  GoogleMobileAdsMediationInMobi: 257dc9c8ed3c76b5e0c2acca4e2c84cea7e091c8
+  GoogleMobileAdsMediationFacebook: 4f0d253e700cee038a8a8c2f852958f43567834e
+  GoogleMobileAdsMediationInMobi: 244ca549dd43ebbbf59ce1485ce166c7352315f8
+  GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: 95996bea7c7d9b8fb811b7507669a4a8762f80c7
-  InMobiSDK: a19f867abc7bc5b9e5ee9635493c8406c3f44690
+  GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  InMobiSDK: 8fefc109960ff4603970fd81761685d8ef5c03d6
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
-PODFILE CHECKSUM: 2cb74a3db119adbbe1db4b9ba702b5be4a88fa5a
+PODFILE CHECKSUM: 266ef1b33eb0fd4120c3672eb17f5ef6b05f3edb
 
 COCOAPODS: 1.4.0

@@ -13,6 +13,9 @@
 		A24A8D8A21D32F3E0037EB12 /* XYAdmobBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8921D32F3E0037EB12 /* XYAdmobBannerAdapter.m */; };
 		A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D8F21D333900037EB12 /* XYBannerLoader.m */; };
 		A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */; };
+		A2B54C7421F318A800BE660E /* XYSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B54C7321F318A800BE660E /* XYSettingsTableViewController.m */; };
+		A2B54C7821F32B4700BE660E /* XYSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B54C7621F32B4700BE660E /* XYSettingsTableViewCell.m */; };
+		A2B54C7921F32B4700BE660E /* XYSettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B54C7721F32B4700BE660E /* XYSettingsTableViewCell.xib */; };
 		A2B720FD21D21A2E00D9EEFB /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */; };
 		A2B720FF21D3231500D9EEFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */; };
 		A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB66FE21CDEB3300FECE3F /* AppDelegate.m */; };
@@ -62,6 +65,11 @@
 		A24A8D8F21D333900037EB12 /* XYBannerLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBannerLoader.m; sourceTree = "<group>"; };
 		A24A8D9321D366B70037EB12 /* XYBasicAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYBasicAdapter.h; sourceTree = "<group>"; };
 		A24A8D9421D366B70037EB12 /* XYBasicAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYBasicAdapter.m; sourceTree = "<group>"; };
+		A2B54C7221F318A800BE660E /* XYSettingsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSettingsTableViewController.h; sourceTree = "<group>"; };
+		A2B54C7321F318A800BE660E /* XYSettingsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYSettingsTableViewController.m; sourceTree = "<group>"; };
+		A2B54C7521F32B4700BE660E /* XYSettingsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSettingsTableViewCell.h; sourceTree = "<group>"; };
+		A2B54C7621F32B4700BE660E /* XYSettingsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYSettingsTableViewCell.m; sourceTree = "<group>"; };
+		A2B54C7721F32B4700BE660E /* XYSettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYSettingsTableViewCell.xib; sourceTree = "<group>"; };
 		A2B720FB21D21A2E00D9EEFB /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
 		A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -237,6 +245,15 @@
 			path = AdmobAd;
 			sourceTree = "<group>";
 		};
+		A2B54C7121F3170700BE660E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A2B54C7221F318A800BE660E /* XYSettingsTableViewController.h */,
+				A2B54C7321F318A800BE660E /* XYSettingsTableViewController.m */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A2EB66F121CDEB3300FECE3F = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +327,9 @@
 				A2EB672421CE3AA900FECE3F /* XYScanView.m */,
 				A214676A21DCDA6B00138A7F /* XYQRCodeResultView.h */,
 				A214676B21DCDA6B00138A7F /* XYQRCodeResultView.m */,
+				A2B54C7521F32B4700BE660E /* XYSettingsTableViewCell.h */,
+				A2B54C7621F32B4700BE660E /* XYSettingsTableViewCell.m */,
+				A2B54C7721F32B4700BE660E /* XYSettingsTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +337,7 @@
 		A2EB693421D0BCC500FECE3F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A2B54C7121F3170700BE660E /* Settings */,
 				A2EB693521D0BD9F00FECE3F /* Scan */,
 			);
 			path = ViewController;
@@ -464,6 +485,7 @@
 				A2B720FF21D3231500D9EEFB /* GoogleService-Info.plist in Resources */,
 				A2EB670A21CDEB3500FECE3F /* LaunchScreen.storyboard in Resources */,
 				A2EB670721CDEB3500FECE3F /* Assets.xcassets in Resources */,
+				A2B54C7921F32B4700BE660E /* XYSettingsTableViewCell.xib in Resources */,
 				A2EB670521CDEB3300FECE3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +608,7 @@
 				A2EB672621CE3AA900FECE3F /* XYScanView.m in Sources */,
 				A214676521DCA56B00138A7F /* XYBasicLoader.m in Sources */,
 				A24A8D9521D366B70037EB12 /* XYBasicAdapter.m in Sources */,
+				A2B54C7821F32B4700BE660E /* XYSettingsTableViewCell.m in Sources */,
 				A2EB670D21CDEB3500FECE3F /* main.m in Sources */,
 				A2F2E0B421D6247900512E4D /* XYBasicManager.m in Sources */,
 				A24A8D9021D333900037EB12 /* XYBannerLoader.m in Sources */,
@@ -596,6 +619,7 @@
 				A2F2E0B021D6130000512E4D /* XYBasicAd.m in Sources */,
 				A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */,
 				A2EB693B21D0BFFE00FECE3F /* CameraScanViewController.m in Sources */,
+				A2B54C7421F318A800BE660E /* XYSettingsTableViewController.m in Sources */,
 				A2EB693E21D1C97600FECE3F /* Constants.m in Sources */,
 				A24A8D8A21D32F3E0037EB12 /* XYAdmobBannerAdapter.m in Sources */,
 			);
