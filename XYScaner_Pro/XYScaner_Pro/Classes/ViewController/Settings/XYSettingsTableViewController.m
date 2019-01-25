@@ -11,6 +11,9 @@
 
 @interface XYSettingsTableViewController (){
     NSMutableDictionary<NSIndexPath *,XYSettingsTableViewCell *> *_cellDic;
+    NSMutableDictionary *_dataDic;
+    NSArray *_sectionList;
+    NSString *_filePath;
 }
 
 
@@ -22,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _cellDic = [[NSMutableDictionary alloc] init];
+    [self updateDataDic];
+    _sectionList = _dataDic[@"SectionList"];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -29,22 +34,81 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)updateDataDic{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+    NSString *directory = [NSString stringWithFormat:@"%@/Settings/%@", [paths objectAtIndex:0],[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+    if (![[NSFileManager defaultManager] fileExistsAtPath:directory]) {
+        // Directory does not exist so create it
+        [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:nil error:nil];
+        NSString *myFilePath = [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"plist"];
+        NSData *data = [NSData dataWithContentsOfFile:myFilePath];
+        NSString *filePath = [directory stringByAppendingPathComponent:[NSString stringWithFormat:@"%@", [myFilePath lastPathComponent]]];
+        BOOL success = [data writeToFile:filePath atomically:NO];
+        if (success) {
+            _filePath = filePath;
+        }
+    }else{
+        _filePath = [directory stringByAppendingPathComponent:@"Settings.plist"];
+    }
+    _dataDic = [[NSMutableDictionary alloc]initWithContentsOfFile:_filePath];
+}
+
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return _sectionList.count;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 50.0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    NSString *key = _sectionList[section];
+    NSArray *items = _dataDic[key];
+    return items.count;
+}
+
+- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return _sectionList[section];
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     if (_cellDic[indexPath]) {
         return _cellDic[indexPath];
     }
-    XYSettingsTableViewCell *cell = [XYSettingsTableViewCell cellWithName:@"test"];
+    
+    NSDictionary *dataDic = [self getDicWithIndex:indexPath];
+    NSString *title = dataDic[@"title"];
+    XYSettingsTableViewCell *cell = [XYSettingsTableViewCell cellWithName:title?:@"test"];
+    cell.needWatchAdCount = [self getNeedWatchCountWithDic:dataDic];
+    cell.imageName = [NSString stringWithFormat:@"settings_%@",dataDic[@"imageName"]];
     _cellDic[indexPath] = cell;
     return cell;
 }
 
+- (NSDictionary *)getDicWithIndex:(NSIndexPath *)indexPath{
+    NSString *key = _sectionList[indexPath.section];
+    NSArray *items = _dataDic[key];
+    return items[indexPath.row];
+}
 
+- (NSInteger)getNeedWatchCountWithDic:(NSDictionary *)dataDic{
+    if ([dataDic[@"needWatchAdCount"] integerValue] > 0) {
+        NSString *title = dataDic[@"title"];
+        if ([[NSUserDefaults standardUserDefaults] objectForKey:title] == nil) {
+            [[NSUserDefaults standardUserDefaults] setObject:dataDic[@"needWatchAdCount"] forKey:title];
+            return [dataDic[@"needWatchAdCount"] integerValue];
+        }
+        return [[[NSUserDefaults standardUserDefaults] objectForKey:title] integerValue];
+    }
+    return 0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

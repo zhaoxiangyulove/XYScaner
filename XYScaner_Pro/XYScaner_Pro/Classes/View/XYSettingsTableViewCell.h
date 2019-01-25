@@ -12,6 +12,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface XYSettingsTableViewCell : UITableViewCell
 
+//title
+@property (nonatomic, strong) NSString *title;
+//imageName
+@property (nonatomic, strong) NSString *imageName;
+//needWatchAdCount
+@property (nonatomic, assign) NSInteger needWatchAdCount;
+
 + (XYSettingsTableViewCell *)cellWithName:(NSString *)name;
 
 @end

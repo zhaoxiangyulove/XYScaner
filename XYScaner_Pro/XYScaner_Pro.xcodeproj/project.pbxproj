@@ -16,6 +16,7 @@
 		A2B54C7421F318A800BE660E /* XYSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B54C7321F318A800BE660E /* XYSettingsTableViewController.m */; };
 		A2B54C7821F32B4700BE660E /* XYSettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B54C7621F32B4700BE660E /* XYSettingsTableViewCell.m */; };
 		A2B54C7921F32B4700BE660E /* XYSettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2B54C7721F32B4700BE660E /* XYSettingsTableViewCell.xib */; };
+		A2B54C7B21F5C3C000BE660E /* Settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B54C7A21F5C3C000BE660E /* Settings.plist */; };
 		A2B720FD21D21A2E00D9EEFB /* ScanResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */; };
 		A2B720FF21D3231500D9EEFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */; };
 		A2EB66FF21CDEB3300FECE3F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EB66FE21CDEB3300FECE3F /* AppDelegate.m */; };
@@ -70,6 +71,7 @@
 		A2B54C7521F32B4700BE660E /* XYSettingsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XYSettingsTableViewCell.h; sourceTree = "<group>"; };
 		A2B54C7621F32B4700BE660E /* XYSettingsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYSettingsTableViewCell.m; sourceTree = "<group>"; };
 		A2B54C7721F32B4700BE660E /* XYSettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = XYSettingsTableViewCell.xib; sourceTree = "<group>"; };
+		A2B54C7A21F5C3C000BE660E /* Settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Settings.plist; sourceTree = "<group>"; };
 		A2B720FB21D21A2E00D9EEFB /* ScanResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanResultViewController.h; sourceTree = "<group>"; };
 		A2B720FC21D21A2E00D9EEFB /* ScanResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScanResultViewController.m; sourceTree = "<group>"; };
 		A2B720FE21D3231500D9EEFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			children = (
 				A2B54C7221F318A800BE660E /* XYSettingsTableViewController.h */,
 				A2B54C7321F318A800BE660E /* XYSettingsTableViewController.m */,
+				A2B54C7A21F5C3C000BE660E /* Settings.plist */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -487,6 +490,7 @@
 				A2EB670721CDEB3500FECE3F /* Assets.xcassets in Resources */,
 				A2B54C7921F32B4700BE660E /* XYSettingsTableViewCell.xib in Resources */,
 				A2EB670521CDEB3300FECE3F /* Main.storyboard in Resources */,
+				A2B54C7B21F5C3C000BE660E /* Settings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

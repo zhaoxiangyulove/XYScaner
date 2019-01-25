@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SectionList</key>
+	<array>
+		<string>Camera settings</string>
+		<string>History &amp; Favorite Settings</string>
+		<string>Seek help</string>
+	</array>
+	<key>Camera settings</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Laser Animation</string>
+			<key>imageName</key>
+			<string>scan</string>
+			<key>needWatchAdCount</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>History &amp; Favorite Settings</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Save options</string>
+			<key>imageName</key>
+			<string>options</string>
+			<key>needWatchAdCount</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Clean histories</string>
+			<key>imageName</key>
+			<string>history</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Clean favorites</string>
+			<key>imageName</key>
+			<string>favorite</string>
+		</dict>
+	</array>
+	<key>Seek help</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Feedback</string>
+			<key>imageName</key>
+			<string>feedback</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Review on App Store</string>
+			<key>imageName</key>
+			<string>review</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -19,26 +19,26 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NIF-QO-0hF">
-                        <rect key="frame" x="8" y="3" width="44" height="44"/>
+                        <rect key="frame" x="30" y="12.5" width="25" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="44" id="5JM-J9-zjq"/>
-                            <constraint firstAttribute="height" constant="44" id="FiK-HA-FtQ"/>
+                            <constraint firstAttribute="width" constant="25" id="5JM-J9-zjq"/>
+                            <constraint firstAttribute="height" constant="25" id="FiK-HA-FtQ"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laser Animation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZ2-cV-gN3">
-                        <rect key="frame" x="60" y="14.5" width="124" height="21"/>
+                        <rect key="frame" x="63" y="14.5" width="124" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OfL-zo-dYA">
-                        <rect key="frame" x="184" y="0.0" width="126" height="49.5"/>
+                        <rect key="frame" x="187" y="0.0" width="123" height="49.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="OfL-zo-dYA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="An0-fl-yfi"/>
-                    <constraint firstItem="NIF-QO-0hF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="E5N-oh-eWa"/>
+                    <constraint firstItem="NIF-QO-0hF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="E5N-oh-eWa"/>
                     <constraint firstItem="OfL-zo-dYA" firstAttribute="leading" secondItem="cZ2-cV-gN3" secondAttribute="trailing" id="GgL-ZP-aW4"/>
                     <constraint firstAttribute="bottom" secondItem="OfL-zo-dYA" secondAttribute="bottom" id="MiZ-q5-xbl"/>
                     <constraint firstItem="NIF-QO-0hF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OsA-ap-Epw"/>
@@ -47,6 +47,11 @@
                     <constraint firstItem="cZ2-cV-gN3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eia-eK-PCc"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="actionContainView" destination="OfL-zo-dYA" id="B8c-eO-12e"/>
+                <outlet property="iconImageView" destination="NIF-QO-0hF" id="omj-ev-r3n"/>
+                <outlet property="titleLabel" destination="cZ2-cV-gN3" id="KNc-JF-zEb"/>
+            </connections>
             <point key="canvasLocation" x="131.19999999999999" y="154.72263868065968"/>
         </tableViewCell>
     </objects>
